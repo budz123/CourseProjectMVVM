@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="TermPaper.MVVM.View.RoomsAddView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TermPaper.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="470" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+
+            <TextBlock Text="Number" Height="22" Width="67"/>
+            <TextBox Name="NumberText" />
+
+            <TextBlock Text="Floor" Height="22" Width="47"/>
+            <ComboBox x:Name="ComboBoxFloorText" >
+                <TextBlock Text="1"/>
+                <TextBlock Text="2"/>
+                <TextBlock Text="3"/>
+            </ComboBox>
+
+            <TextBlock Text="Type" Height="20" Width="43"/>
+            <ComboBox x:Name="ComboBoxTypeText"  >
+                <TextBlock Text="Comfort"/>
+                <TextBlock Text="NeComfort"/>
+                <TextBlock Text="VIP"/>
+            </ComboBox>
+
+            <TextBlock Text="Capfcity" Height="21" Width="80"/>
+            <ComboBox x:Name="ComboBoxCapfcityText" >
+                <TextBlock Text="1"/>
+                <TextBlock Text="2"/>
+                <TextBlock Text="3"/>
+            </ComboBox>
+
+            <TextBlock Text="Status" Height="20" Width="57"/>
+            <ComboBox x:Name="ComboBoxStatusText" >
+                <TextBlock Text="Resever"/>
+                <TextBlock Text="NOTResever"/>
+            </ComboBox>
+
+            <TextBlock Text="Price" Height="19" Width="45"/>
+            <TextBox Name="PriceText"/>
+
+
+
+
+            <Button Content="Save" FontSize="30"  />
+        </StackPanel>
+    </Grid>
+</UserControl>

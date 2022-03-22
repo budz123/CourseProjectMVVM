@@ -1,0 +1,44 @@
+﻿<UserControl x:Name="Edit" x:Class="TermPaper.MVVM.View.ClietnsEditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TermPaper.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1">
+
+            <ComboBox Name="ComboBoxEdit"  />
+            <TextBlock Text="FirstNameEdit"/>
+            <TextBox Name="FirstNameTextEdit" />
+
+            <TextBlock Text="LastNameEdit"/>
+            <TextBox Name="LastNameTextEdit" />
+
+
+            <TextBlock Text="PassportEdit"/>
+            <TextBox Name="PassportTextEdit" />
+
+            <TextBlock Text="DateOFBrithEdit"/>
+            <DatePicker Name="DatePickerDateOfBrithEdit" IsDropDownOpen="True" SelectedDateFormat="Short"/>
+
+            <TextBlock Text="GenderEdit"/>
+            <ComboBox Name="GenderTextEdit"  >
+                <TextBlock Text="Муж."/>
+                <TextBlock Text="Жен."/>
+            </ComboBox>
+
+            <TextBlock Text="PhoneNumberEdit"/>
+            <TextBox Name="PhoneNumberTextEdit" />
+
+            <Button Content="Save" FontSize="30" />
+        </StackPanel>
+    </Grid>
+</UserControl>

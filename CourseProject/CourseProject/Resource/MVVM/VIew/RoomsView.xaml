@@ -1,0 +1,34 @@
+﻿<Window x:Class="TermPaper.MVVM.View.RoomsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TermPaper.MVVM.View"
+        mc:Ignorable="d"
+        Title="RoomsView" Height="500" Width="800"
+        xmlns:viewmodel="clr-namespace:TermPaper.MVVM.ViewModel">
+    <Window.DataContext>
+        <viewmodel:RoomsViewModel/>
+    </Window.DataContext>
+    <Grid Margin="0,0,0,7" >
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#094d74">
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Content="ButtonDelete" HorizontalAlignment="Left" Height="50" Margin="10,10,10,10" VerticalAlignment="Center" Width="140"  />
+                <Button Content="ButtonEdit" HorizontalAlignment="Left" Height="50" Margin="10,10,10,10" VerticalAlignment="Center" Width="140"  />
+                <Button Content="Buttonadd" HorizontalAlignment="Left" Height="50" Margin="10,10,10,10" VerticalAlignment="Center" Width="140" />
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Background="#759cd8">
+            <ContentControl  Content="{Binding CurrentView}">
+
+            </ContentControl>
+        </Border>
+       
+      
+    </Grid>
+</Window>

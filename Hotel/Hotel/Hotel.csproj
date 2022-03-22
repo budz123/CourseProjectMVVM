@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resource\MVVM\ViewModel\" />
-    <Folder Include="Resource\MVVM\VIew\" />
-    <Folder Include="Resource\Style\" />
+    <Folder Include="MVVM\View\" />
   </ItemGroup>
 
   <ItemGroup>

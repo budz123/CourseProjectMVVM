@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CourseProject.Resource.MVVM.VIew
+namespace TermPaper.MVVM.View
 {
     /// <summary>
-    /// Логика взаимодействия для Login.xaml
+    /// Логика взаимодействия для ReservationsView.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class ReservationsView : Window
     {
-        public Login()
+        public ReservationsView()
         {
             InitializeComponent();
         }
